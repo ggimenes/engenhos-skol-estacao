@@ -1,0 +1,24 @@
+{
+    "engenhosSkolEstacaoApp": {
+        "priceTableItem": {
+            "home": {
+                "title": "Price Table Items",
+                "createLabel": "Create a new Price Table Item",
+                "createOrEditLabel": "Create or edit a Price Table Item"
+            },
+            "created": "A new Price Table Item is created with identifier {{ param }}",
+            "updated": "A Price Table Item is updated with identifier {{ param }}",
+            "deleted": "A Price Table Item is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Price Table Item {{ id }}?"
+            },
+            "detail": {
+                "title": "Price Table Item"
+            },
+            "price": "Price",
+            "product": "Product",
+            "priceInterval": "Price Interval",
+            "priceTable": "Price Table"
+        }
+    }
+}

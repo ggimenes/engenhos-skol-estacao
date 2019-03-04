@@ -1,0 +1,46 @@
+{
+    "name": "PriceTableItem",
+    "fields": [
+        {
+            "fieldName": "price",
+            "fieldType": "Double",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipValidateRules": "required",
+            "relationshipName": "product",
+            "otherEntityName": "product",
+            "otherEntityRelationshipName": "priceTableItem"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipValidateRules": "required",
+            "relationshipName": "priceInterval",
+            "otherEntityName": "priceInterval",
+            "otherEntityRelationshipName": "priceTableItem"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipValidateRules": "required",
+            "relationshipName": "priceTable",
+            "otherEntityName": "priceTable",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "items"
+        }
+    ],
+    "changelogDate": "20190304160043",
+    "entityTableName": "price_table_item",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "skipServer": true
+}

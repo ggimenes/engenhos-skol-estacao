@@ -1,0 +1,130 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-station-heading" jhiTranslate="engenhosSkolEstacaoApp.station.home.createOrEditLabel">Create or edit a Station</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!station.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="station.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="engenhosSkolEstacaoApp.station.name" for="field_name">Name</label>
+                    <input type="text" class="form-control" name="name" id="field_name"
+                        [(ngModel)]="station.name" required/>
+                    <div [hidden]="!(editForm.controls.name?.dirty && editForm.controls.name?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.name?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="engenhosSkolEstacaoApp.station.code" for="field_code">Code</label>
+                    <input type="text" class="form-control" name="code" id="field_code"
+                        [(ngModel)]="station.code" required/>
+                    <div [hidden]="!(editForm.controls.code?.dirty && editForm.controls.code?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.code?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="engenhosSkolEstacaoApp.station.streetAddress" for="field_streetAddress">Street Address</label>
+                    <input type="text" class="form-control" name="streetAddress" id="field_streetAddress"
+                        [(ngModel)]="station.streetAddress" required/>
+                    <div [hidden]="!(editForm.controls.streetAddress?.dirty && editForm.controls.streetAddress?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.streetAddress?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="engenhosSkolEstacaoApp.station.streetNumber" for="field_streetNumber">Street Number</label>
+                    <input type="text" class="form-control" name="streetNumber" id="field_streetNumber"
+                        [(ngModel)]="station.streetNumber" required/>
+                    <div [hidden]="!(editForm.controls.streetNumber?.dirty && editForm.controls.streetNumber?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.streetNumber?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="engenhosSkolEstacaoApp.station.district" for="field_district">District</label>
+                    <input type="text" class="form-control" name="district" id="field_district"
+                        [(ngModel)]="station.district" required/>
+                    <div [hidden]="!(editForm.controls.district?.dirty && editForm.controls.district?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.district?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="engenhosSkolEstacaoApp.station.city" for="field_city">City</label>
+                    <input type="text" class="form-control" name="city" id="field_city"
+                        [(ngModel)]="station.city" required/>
+                    <div [hidden]="!(editForm.controls.city?.dirty && editForm.controls.city?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.city?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="engenhosSkolEstacaoApp.station.state" for="field_state">State</label>
+                    <input type="text" class="form-control" name="state" id="field_state"
+                        [(ngModel)]="station.state" required/>
+                    <div [hidden]="!(editForm.controls.state?.dirty && editForm.controls.state?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.state?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="engenhosSkolEstacaoApp.station.zipCode" for="field_zipCode">Zip Code</label>
+                    <input type="text" class="form-control" name="zipCode" id="field_zipCode"
+                        [(ngModel)]="station.zipCode" required/>
+                    <div [hidden]="!(editForm.controls.zipCode?.dirty && editForm.controls.zipCode?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.zipCode?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="engenhosSkolEstacaoApp.station.country" for="field_country">Country</label>
+                    <input type="text" class="form-control" name="country" id="field_country"
+                        [(ngModel)]="station.country" required/>
+                    <div [hidden]="!(editForm.controls.country?.dirty && editForm.controls.country?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.country?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="engenhosSkolEstacaoApp.station.slot" for="field_slot">Slot</label>
+                    <select class="form-control" id="field_slot" name="slot" [(ngModel)]="station.slot" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="slotOption.id === station.slot?.id ? station.slot : slotOption" *ngFor="let slotOption of slots; trackBy: trackSlotById">{{slotOption.id}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

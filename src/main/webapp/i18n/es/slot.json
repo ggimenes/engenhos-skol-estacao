@@ -1,0 +1,25 @@
+{
+    "engenhosSkolEstacaoApp": {
+        "slot": {
+            "home": {
+                "title": "Slots",
+                "createLabel": "Crear nuevo Slot",
+                "createOrEditLabel": "Crear o editar Slot"
+            },
+            "created": "Un nuevo Slot ha sido creado con el identificador {{ param }}",
+            "updated": "Un Slot ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Slot ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Slot {{ id }}?"
+            },
+            "detail": {
+                "title": "Slot"
+            },
+            "number": "Number",
+            "positionX": "Position X",
+            "positionY": "Position Y",
+            "station": "Station",
+            "product": "Product"
+        }
+    }
+}

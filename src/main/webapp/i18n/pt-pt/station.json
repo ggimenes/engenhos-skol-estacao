@@ -1,0 +1,30 @@
+{
+    "engenhosSkolEstacaoApp": {
+        "station": {
+            "home": {
+                "title": "Stations",
+                "createLabel": "Criar um(a) novo(a) Station",
+                "createOrEditLabel": "Criar ou editar um(a) Station"
+            },
+            "created": "A new Station is created with identifier {{ param }}",
+            "updated": "A Station is updated with identifier {{ param }}",
+            "deleted": "A Station is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Tem a certeza que pretende eliminar o(a) Station {{ id }}?"
+            },
+            "detail": {
+                "title": "Station"
+            },
+            "name": "Name",
+            "code": "Code",
+            "streetAddress": "Street Address",
+            "streetNumber": "Street Number",
+            "district": "District",
+            "city": "City",
+            "state": "State",
+            "zipCode": "Zip Code",
+            "country": "Country",
+            "slot": "Slot"
+        }
+    }
+}

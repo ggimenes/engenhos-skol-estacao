@@ -1,0 +1,24 @@
+{
+    "engenhosSkolEstacaoApp": {
+        "priceInterval": {
+            "home": {
+                "title": "Price Intervals",
+                "createLabel": "Crear nuevo Price Interval",
+                "createOrEditLabel": "Crear o editar Price Interval"
+            },
+            "created": "Un nuevo Price Interval ha sido creado con el identificador {{ param }}",
+            "updated": "Un Price Interval ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Price Interval ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Price Interval {{ id }}?"
+            },
+            "detail": {
+                "title": "Price Interval"
+            },
+            "name": "Name",
+            "initialMinutes": "Initial Minutes",
+            "finalMinutes": "Final Minutes",
+            "priceTableItem": "Price Table Item"
+        }
+    }
+}

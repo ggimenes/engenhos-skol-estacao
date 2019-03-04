@@ -1,0 +1,35 @@
+{
+    "name": "PriceInterval",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "initialMinutes",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "finalMinutes",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "priceTableItem",
+            "otherEntityName": "priceTableItem",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190304160044",
+    "entityTableName": "price_interval",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "skipServer": true
+}

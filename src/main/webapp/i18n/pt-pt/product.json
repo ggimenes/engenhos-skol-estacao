@@ -1,0 +1,25 @@
+{
+    "engenhosSkolEstacaoApp": {
+        "product": {
+            "home": {
+                "title": "Products",
+                "createLabel": "Criar um(a) novo(a) Product",
+                "createOrEditLabel": "Criar ou editar um(a) Product"
+            },
+            "created": "A new Product is created with identifier {{ param }}",
+            "updated": "A Product is updated with identifier {{ param }}",
+            "deleted": "A Product is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Tem a certeza que pretende eliminar o(a) Product {{ id }}?"
+            },
+            "detail": {
+                "title": "Product"
+            },
+            "name": "Name",
+            "description": "Description",
+            "active": "Active",
+            "slot": "Slot",
+            "priceTableItem": "Price Table Item"
+        }
+    }
+}

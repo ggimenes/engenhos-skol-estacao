@@ -1,0 +1,24 @@
+{
+    "engenhosSkolEstacaoApp": {
+        "userExtra": {
+            "home": {
+                "title": "User Extras",
+                "createLabel": "Criar um(a) novo(a) User Extra",
+                "createOrEditLabel": "Criar ou editar um(a) User Extra"
+            },
+            "created": "A new User Extra is created with identifier {{ param }}",
+            "updated": "A User Extra is updated with identifier {{ param }}",
+            "deleted": "A User Extra is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Tem a certeza que pretende eliminar o(a) User Extra {{ id }}?"
+            },
+            "detail": {
+                "title": "User Extra"
+            },
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "cpf": "Cpf",
+            "phone": "Phone"
+        }
+    }
+}

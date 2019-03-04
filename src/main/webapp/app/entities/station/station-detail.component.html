@@ -1,0 +1,65 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="station">
+            <h2><span jhiTranslate="engenhosSkolEstacaoApp.station.detail.title">Station</span> {{station.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="engenhosSkolEstacaoApp.station.name">Name</span></dt>
+                <dd>
+                    <span>{{station.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="engenhosSkolEstacaoApp.station.code">Code</span></dt>
+                <dd>
+                    <span>{{station.code}}</span>
+                </dd>
+                <dt><span jhiTranslate="engenhosSkolEstacaoApp.station.streetAddress">Street Address</span></dt>
+                <dd>
+                    <span>{{station.streetAddress}}</span>
+                </dd>
+                <dt><span jhiTranslate="engenhosSkolEstacaoApp.station.streetNumber">Street Number</span></dt>
+                <dd>
+                    <span>{{station.streetNumber}}</span>
+                </dd>
+                <dt><span jhiTranslate="engenhosSkolEstacaoApp.station.district">District</span></dt>
+                <dd>
+                    <span>{{station.district}}</span>
+                </dd>
+                <dt><span jhiTranslate="engenhosSkolEstacaoApp.station.city">City</span></dt>
+                <dd>
+                    <span>{{station.city}}</span>
+                </dd>
+                <dt><span jhiTranslate="engenhosSkolEstacaoApp.station.state">State</span></dt>
+                <dd>
+                    <span>{{station.state}}</span>
+                </dd>
+                <dt><span jhiTranslate="engenhosSkolEstacaoApp.station.zipCode">Zip Code</span></dt>
+                <dd>
+                    <span>{{station.zipCode}}</span>
+                </dd>
+                <dt><span jhiTranslate="engenhosSkolEstacaoApp.station.country">Country</span></dt>
+                <dd>
+                    <span>{{station.country}}</span>
+                </dd>
+                <dt><span jhiTranslate="engenhosSkolEstacaoApp.station.slot">Slot</span></dt>
+                <dd>
+                    <div *ngIf="station.slot">
+                        <a [routerLink]="['/slot', station.slot?.id, 'view']">{{station.slot?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/station', station.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

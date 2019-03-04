@@ -1,0 +1,72 @@
+entity UserExtra {
+	firstName String required,
+    lastName String required,
+    cpf String required,
+    phone String required
+}
+
+entity Product{
+	name String required,
+    description String required,
+    active Boolean required   
+}
+
+entity Station{
+	name String required,
+    code String required,
+	streetAddress String required,
+    streetNumber String required,
+    district String required,
+    city String required,
+    state String required,    
+    zipCode String required,
+    country String required,
+}
+
+entity Slot{
+	number String required,
+    positionX Integer required,
+    positionY Integer required
+}
+
+entity PriceTable{
+	name String required,
+    initialDate LocalDate required,
+    endDate LocalDate required,
+    active Boolean required    
+}
+
+entity PriceTableItem{	
+    price Double required
+}
+
+entity PriceInterval{
+	name String,
+    initialMinutes Integer,
+    finalMinutes Integer
+}
+
+relationship OneToMany {
+    Slot{station(name) required} to Station
+    Slot{product(name) required} to Product
+    PriceTableItem{product(name) required} to Product
+    PriceTableItem{priceInterval(name) required} to PriceInterval
+}
+
+relationship ManyToMany {
+	PriceTable{items required} to PriceTableItem{priceTable required}    
+}
+
+// Set pagination options
+paginate all with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
+
+skipServer all

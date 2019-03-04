@@ -1,0 +1,25 @@
+{
+    "engenhosSkolEstacaoApp": {
+        "priceTable": {
+            "home": {
+                "title": "Price Tables",
+                "createLabel": "Crear nuevo Price Table",
+                "createOrEditLabel": "Crear o editar Price Table"
+            },
+            "created": "Un nuevo Price Table ha sido creado con el identificador {{ param }}",
+            "updated": "Un Price Table ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Price Table ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Price Table {{ id }}?"
+            },
+            "detail": {
+                "title": "Price Table"
+            },
+            "name": "Name",
+            "initialDate": "Initial Date",
+            "endDate": "End Date",
+            "active": "Active",
+            "items": "Items"
+        }
+    }
+}
